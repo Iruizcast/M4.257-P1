@@ -1,14 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index title</title>
-    <script src="app.js"></script>
+
     <link rel="stylesheet" href="styles.css" />
   </head>
   <include src="src/header.html"></include>
-  <body>
-    <h1>INDEX</h1>
+  <body class="landing">
+    <header class="hero">
+      <div class="hero-content">
+        <h1>Vigo la ciudad de la Navidad</h1>
+        <p>La ciudad que elegiría el Niño Jesús si volviese a nacer</p>
+
+        <a href="category.html" class="button">Descubre más</a>
+        <div class="countdown">
+          <p class="countdown-text">
+            Faltan <span class="global-time"></span> para Navidad, pero en Vigo
+            <span class="vigo-time"></span>.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <script src="app.js"></script>
   </body>
 </html>
