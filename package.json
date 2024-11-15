@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Herramientas HTML y CSS - Práctica 1",
   "source": "src/index.html",
+  "browserslist": "> 0.5%, last 3 versions",
   "scripts": {
     "start": "npm-run-all clean parcel:dev",
     "build": "npm-run-all clean parcel:build",
@@ -18,5 +19,8 @@
     "parcel": "^2.13.0",
     "posthtml-include": "^2.0.1",
     "rimraf": "^6.0.1"
+  },
+  "dependencies": {
+    "postcss-nested": "^7.0.2"
   }
 }
