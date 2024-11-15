@@ -1,0 +1,16 @@
+{
+  "name": "m4.257-p1",
+  "version": "1.0.0",
+  "description": "Herramientas HTML y CSS - Práctica 1",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.13.0"
+  }
+}
