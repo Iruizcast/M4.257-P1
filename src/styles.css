@@ -1,3 +1,6 @@
 h1 {
   color: blue;
 }
+.current-page {
+  border-bottom: 3px solid var(--color-contrast);
+}
