@@ -8,8 +8,7 @@
 body {
   margin: 0;
   &.landing {
-    background: url("/src/assets/img/Árbol_de_Navidad.jpg") no-repeat center
-      center fixed;
+    background: url("/src/assets/img/arbol.jpg") no-repeat center center fixed;
     background-size: cover;
   }
 }

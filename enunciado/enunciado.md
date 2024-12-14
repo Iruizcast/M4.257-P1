@@ -37,4 +37,17 @@ El sitio web deberá seguir las características que se especifican a continuaci
 
 - La imagen destacada que hemos elegido para la página de detalle debe ser visible también en esta página. Piensa, por ejemplo, en Amazon: al hacer una búsqueda ves la imagen (en pequeño) del producto, y al entrar en el producto, la ves en grande
 
+### Página de presentación
 
+- En esta página debe haber al menos un recurso gráfico hecho con SVG. Este SVG debe tener una pequeña animación mediante CSS.
+
+### Página de enlaces
+
+-Muy importante (en especial de cara a esta entrega): Ten en cuenta el uso de material protegido por derechos de autor, como se especifica en el último apartado de este documento. Recuerda cuáles son los límites y excepciones 
+
+- Links to an external site. a la hora de utilizar materiales protegidos por derechos de autor.
+>Todos los recursos que requieran reconocimiento de derechos deben ir correctamente reconocidos y enlazados en esta página
+
+> Además de estos requisitos mínimos, puedes ampliar tu proyecto como lo creas oportuno. Por ejemplo: ¿sabes qué es un Favicon y cómo se añade a un proyecto web?
+
+> Como siempre, la web tiene que estar publicada y ser accesible desde internet.

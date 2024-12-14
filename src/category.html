@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index title</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css" /> 
   </head>
   <include src="src/header.html"></include>
   <body>
@@ -14,7 +14,23 @@
         <section class="card-list">
           <article class="card">
             <a href="detail.html" class="card-link">
-              <img src="/src/assets/img/Centro Vigo.jpg" alt="Centro de Vigo" class="card-image" />
+              <img
+                src="/src/assets/img/centro-800w.webp" 
+                alt="Centro de Vigo"
+                class="card-image" 
+                srcset="
+                  /src/assets/img/centro-400w.webp 400w, 
+                  /src/assets/img/centro-800w.webp 800w, 
+                  /src/assets/img/centro-1024w.webp 1024w
+                  /src/assets/img/centro-2048w.webp 2048w
+                "
+                sizes="
+                  (max-width: 600px) 400px, 
+                  (max-width: 900px) 800px,
+                  (max-width: 1200px) 1024px,
+                  2048px
+                " 
+              />
               <div class="card-content">
                 <h2>Centro de Vigo</h2>
                 <p>
@@ -25,7 +41,20 @@
           </article>
           <article class="card">
             <a href="detail.html" class="card-link">
-              <img src="/src/assets/img/Ocastro.jpg" alt="Monte del Castro" class="card-image" />
+              <img
+               src="/src/assets/img/castro-800w.webp"
+               alt="Monte del Castro"
+               class="card-image"
+               srcset="
+               /src/assets/img/castro-400w.webp 400w,
+               /src/assets/img/castro-800w.webp 800w,
+               /src/assets/img/castro-1024w.webp 1024w
+               "
+               sizes="
+               (max-width: 600px) 400px,
+               (max-width: 900px) 800px,
+               1024px"
+               />
               <div class="card-content">
                 <h2>Monte del Castro</h2>
                 <p>
@@ -36,7 +65,21 @@
           </article>
           <article class="card">
             <a href="detail.html" class="card-link">
-              <img src="/src/assets/img/samil.jpg" alt="Playa de Samil" class="card-image" />
+              <img
+                src="/src/assets/img/samil-800w.webp"
+                alt="Playa de Samil"
+                class="card-image"
+                srcset="
+                /src/assets/img/samil-400w.webp 400w,
+                /src/assets/img/samil-800w.webp 800w,
+                /src/assets/img/samil-1024w.webp 1024w
+                " 
+                sizes="
+                (max-width: 600px) 400px,
+                (max-width: 900px) 800px,
+                1024px
+                "
+                />
               <div class="card-content">
                 <h2>Playa de Samil</h2>
                 <p>
@@ -47,7 +90,22 @@
           </article>
           <article class="card">
             <a href="detail.html" class="card-link">
-              <img src="/src/assets/img/Navidad.jpg" alt="Navidad en Vigo" class="card-image" />
+              <img
+               src="/src/assets/img/navidad-800w.webp"
+               alt="Navidad en Vigo"
+               class="card-image"
+               srcset="
+                /src/assets/img/navidad-400w.webp 400w,
+                /src/assets/img/navidad-800w.webp 800w,
+                /src/assets/img/navidad-1024w.webp 1024w
+                /src/assets/img/navidad-2048w.webp 2048w
+               "
+               sizes="
+                (max-width: 600px) 400px,
+                (max-width: 900px) 800px,
+                (max-width: 1200px) 1024px,
+                2048px
+               " />
               <div class="card-content">
                 <h2>Navidad en Vigo</h2>
                 <p>
@@ -58,7 +116,7 @@
           </article>
         </section>
       </main>
-    
+      <include src="src/footer.html"></include>
     <script src="app.js"></script>
   </body>
 </html>
