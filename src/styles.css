@@ -525,3 +525,7 @@ body {
     opacity: 1;
   }
 }
+
+.links {
+  padding: 2rem;
+}

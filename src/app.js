@@ -29,6 +29,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function updateCountdown() {
         const now = new Date();
+        const countdownText = document.querySelector(".countdown-text");
+        const postChristmasText = document.querySelector(".post-christmas-text");
 
         const globalDiff = globalChristmas - now;
         const vigoDiff = vigoChristmas - now;
@@ -47,6 +49,10 @@ document.addEventListener("DOMContentLoaded", () => {
         // Actualiza el DOM
         document.querySelector('.global-time').textContent = globalTime;
         document.querySelector('.vigo-time').textContent = vigoTime;
+        if (now > globalChristmas) {
+            countdownText.style.display = "none";
+            postChristmasText.style.display = "block";
+        }
     }
 
     // Inicializa y actualiza cada segundo
