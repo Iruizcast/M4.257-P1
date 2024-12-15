@@ -312,9 +312,9 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   color: #333;
-  padding: 0 1rem;
 
   .detail-article {
+    padding: 0 1rem;
     max-width: 800px;
     margin: 0 auto;
 
@@ -435,5 +435,93 @@ body {
       font-style: italic;
       color: #666;
     }
+  }
+}
+.svg-container {
+  position: relative;
+  background-color: var(--background-color);
+  height: 100px;
+  margin: 2rem auto;
+}
+
+.animated-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  height: 100%;
+  opacity: 0;
+}
+
+.svg1 {
+  animation: animation1 15s infinite;
+  animation-delay: 0s;
+}
+
+.svg2 {
+  animation-delay: 0s;
+  animation: animation2 15s infinite;
+}
+
+.svg3 {
+  animation-delay: 0s;
+  animation: animation3 15s infinite;
+}
+
+@keyframes animation1 {
+  0%,
+  25% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  25%,
+  50% {
+    opacity: 1;
+    transform: rotate(180deg);
+  }
+  50%,
+  75% {
+    opacity: 0;
+  }
+  75%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes animation2 {
+  0%,
+  25% {
+    opacity: 0;
+  }
+  25%,
+  50% {
+    opacity: 0;
+  }
+  50%,
+  75% {
+    opacity: 1;
+  }
+  75%,
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes animation3 {
+  0%,
+  25% {
+    opacity: 0;
+  }
+  25%,
+  50% {
+    opacity: 0;
+  }
+  50%,
+  75% {
+    opacity: 0;
+  }
+  75%,
+  100% {
+    opacity: 1;
   }
 }
