@@ -5,10 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index title</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="assets/img/favicon.svg" type="image/png" />
   </head>
   <include src="src/header.html"></include>
   <body>
     <main class="detail">
+      <picture>
+        <source
+          srcset="
+            assets/img/Museo-do-Mar-(landscape)-800w.webp   800w,
+            assets/img/Museo-do-Mar-(landscape)-1600w.webp 1600w,
+            assets/img/Museo-do-Mar-(landscape)-3000w.webp 3000w
+          "
+          sizes="100vw"
+          media="(orientation: landscape)"
+        />
+        <source
+          srcset="
+            assets/img/Museo-do-Mar-(portrait)-400w.webp   400w,
+            assets/img/Museo-do-Mar-(portrait)-800w.webp   800w,
+            assets/img/Museo-do-Mar-(portrait)-1200w.webp 1200w
+          "
+          sizes="100vw"
+          media="(orientation: portrait)"
+        />
+        <img
+          src="assets/img/Museo-do-Mar-(landscape)-1600w.webp"
+          alt="museo-do-mar"
+          class="detail-main-image"
+        />
+      </picture>
       <article class="detail-article">
         <header class="detail-header">
           <h1>El Centro de Vigo y su Arquitectura</h1>
@@ -59,7 +85,6 @@
             arquitectos como
             <a
               href="https://es.wikipedia.org/wiki/Jenaro_de_la_Fuente_Dom%C3%ADnguez"
-              target="_blank"
               >Jenaro de la Fuente Domínguez</a
             >, quien diseñó obras que combinan funcionalidad y ornamentación
             única.
@@ -82,27 +107,19 @@
           <picture>
             <source
               srcset="
-                assets/img/moderno-400w.webp   400w,
-                assets/img/moderno-800w.webp   800w,
-                assets/img/moderno-1024w.webp 1024w,
-                assets/img/moderno-1920w.webp 1920w
+                assets/img/moderno-400w.webp 1x,
+                assets/img/moderno-800w.webp 2x
               "
-              sizes="
-              (max-width: 600px) 400px,
-              (max-width: 900px) 800px,
-              (max-width: 1200px) 1024px,
-              1920px"
+              sizes="400px"
               type="image/webp"
               media="(orientation: landscape)"
             />
             <source
               srcset="
-                assets/img/moderno-portrait-400w.webp 400w,
-                assets/img/moderno-portrait-800w.webp 800w
+                assets/img/moderno-portrait-400w.webp 1x,
+                assets/img/moderno-portrait-800w.webp 2x
               "
-              sizes="
-              (max-width: 600px) 400px,
-              800px"
+              sizes="400px"
               type="image/webp"
               media="(orientation: portrait)"
             />
