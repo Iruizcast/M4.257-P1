@@ -20,11 +20,39 @@
         </header>
 
         <section class="detail-section">
-          <img
-            src="assets/img/bonin-jenaro.jpg"
-            alt="Edificio Bonin"
-            class="detail-image-full"
-          />
+          <picture>
+            <source
+              srcset="
+                assets/img/bonin-jenaro-400w.webp   400w,
+                assets/img/bonin-jenaro-800w.webp   800w,
+                assets/img/bonin-jenaro-1440w.webp 1440w,
+                assets/img/bonin-jenaro-2048w.webp 2048w
+              "
+              sizes="
+              (max-width: 600px) 400px,
+              (max-width: 900px) 800px,
+              (max-width: 1200px) 1440px,
+              2048px"
+              type="image/webp"
+              media="(orientation: landscape)"
+            />
+            <source
+              srcset="
+                assets/img/bonin-jenaro-portrait-400w.webp 400w,
+                assets/img/bonin-jenaro-portrait-800w.webp 800w
+              "
+              sizes="
+              (max-width: 600px) 400px,
+              800px"
+              type="image/webp"
+              media="(orientation: portrait)"
+            />
+            <img
+              src="assets/img/bonin-jenaro-800w.webp"
+              alt="Edificio Bonin"
+              class="detail-image-full"
+            />
+          </picture>
           <h2>La Influencia del Modernismo</h2>
           <p>
             El modernismo en Vigo surge a principios del siglo XX, impulsado por
@@ -51,11 +79,39 @@
 
         <section class="detail-section">
           <h2>El Racionalismo y la Evolución Urbana</h2>
-          <img
-            src="assets/img/moderno.jpg"
-            alt="Edificio Moderno en Vigo"
-            class="detail-image-side"
-          />
+          <picture>
+            <source
+              srcset="
+                assets/img/moderno-400w.webp   400w,
+                assets/img/moderno-800w.webp   800w,
+                assets/img/moderno-1024w.webp 1024w,
+                assets/img/moderno-1920w.webp 1920w
+              "
+              sizes="
+              (max-width: 600px) 400px,
+              (max-width: 900px) 800px,
+              (max-width: 1200px) 1024px,
+              1920px"
+              type="image/webp"
+              media="(orientation: landscape)"
+            />
+            <source
+              srcset="
+                assets/img/moderno-portrait-400w.webp 400w,
+                assets/img/moderno-portrait-800w.webp 800w
+              "
+              sizes="
+              (max-width: 600px) 400px,
+              800px"
+              type="image/webp"
+              media="(orientation: portrait)"
+            />
+            <img
+              src="assets/img/moderno.jpg"
+              alt="Edificio Moderno en Vigo"
+              class="detail-image-side"
+            />
+          </picture>
           <p>
             En las décadas siguientes, el estilo racionalista marcó la
             arquitectura del centro de Vigo. Este movimiento arquitectónico,

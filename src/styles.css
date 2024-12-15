@@ -345,10 +345,14 @@ body {
         float: right;
         width: 50%;
         height: auto;
-        margin: 1rem;
         margin-left: 2rem;
         border-radius: 8px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        @media (orientation: portrait) {
+          float: none;
+          width: 100%;
+          margin-left: 0;
+        }
       }
 
       &:after {
