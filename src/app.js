@@ -24,8 +24,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     });
 
-    const globalChristmas = new Date(new Date().getFullYear(), 11, 25, 0, 0, 0);
-    const vigoChristmas = new Date(new Date().getFullYear(), 10, 16, 20, 0, 0);
+    const globalChristmas = new Date(2024, 11, 25, 0, 0, 0);
+    const vigoChristmas = new Date(2024, 10, 16, 20, 0, 0);
 
     function updateCountdown() {
         const now = new Date();
