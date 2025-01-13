@@ -11,6 +11,26 @@
   </head>
 
   <body class="landing">
+    <picture class="background-image">
+      <source
+        media="(max-width: 767px)"
+        srcset="assets/img/arbol-800px.webp"
+        type="image/webp"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="assets/img/arbol-2048px.webp"
+        type="image/webp"
+      />
+      <img
+        src="assets/img/arbol.jpg"
+        alt=""
+        width="1920"
+        height="1080"
+        loading="eager"
+        fetchpriority="high"
+      />
+    </picture>
     <include src="src/header.html"></include>
     <header class="hero">
       <div class="hero-content">
@@ -20,6 +40,8 @@
           src="assets/img/sol.webp"
           alt="estrella invertida"
           class="star-image"
+          width="200"
+          height="200"
         />
 
         <p>La ciudad que elegiría el Niño Jesús si volviera a nacer</p>
